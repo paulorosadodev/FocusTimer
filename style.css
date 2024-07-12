@@ -5,7 +5,7 @@
 }
 
 :root {
-    font-size: 62.5%;
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
     --bg-color: #121214;
     --text-color: #F8F8FC;
     --primary-color: #42D3FF;
@@ -27,4 +27,30 @@ body {
 
 .flex {
     display: flex;
+}
+
+#timer {
+    font-size: 9.6rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+#controls {
+    margin-top: 1.6rem;
+    padding: 2.2rem 4.4rem;
+    gap: 1.6rem;
+    background-color: var(--controls-bg-color);
+    border-radius: 999rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 3.4rem;
+}
+
+.secondary {
+    color: var(--text-color);
 }
