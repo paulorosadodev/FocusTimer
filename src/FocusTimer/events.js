@@ -11,4 +11,14 @@ export function registerControls() {
 
         actions[action]()
     })
+
+    window.addEventListener('keydown', event => {
+        if (event.key == ' ') {
+            actions['toggleRunning']()
+        } else if (event.key == 'Enter') {
+            actions['reset']()
+        } else if (event.key.toLowerCase() == 'm') {
+            actions['toggleMusic']()
+        }
+    })
 }
