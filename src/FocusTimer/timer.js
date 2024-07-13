@@ -1,5 +1,6 @@
 import state from './state.js'
 import * as el from './elements.js'
+import * as sounds from './sounds.js'
 import { reset } from './actions.js'
 
 export function countdown() {
@@ -19,6 +20,7 @@ export function countdown() {
 
     if (minutes < 0) {
         reset()
+        sounds.alarm.play()
         return
     }
 
