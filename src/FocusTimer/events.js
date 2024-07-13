@@ -19,6 +19,11 @@ export function registerControls() {
             actions['reset']()
         } else if (event.key.toLowerCase() == 'm') {
             actions['toggleMusic']()
-        }
+        } 
+        // else if (event.key == 'ArrowRight') {
+        //     actions['forward']()
+        // } else if (event.key == 'ArrowLeft') {
+        //     actions['backward']()
+        // }
     })
 }
